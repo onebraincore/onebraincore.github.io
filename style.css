@@ -39,6 +39,9 @@ header {
 .align-middle {
     vertical-align: middle!important;
 }
+.float-right{
+    float:right;
+}
 .blue-gradient-brand-name{
     background: -webkit-linear-gradient(0deg, rgba(32,94,137,1) 0%, rgba(67,247,252,1) 50%, rgba(11,165,190,1) 100%);
     -webkit-background-clip: text;
@@ -62,7 +65,6 @@ header {
     text-shadow: 0px 1px 0px #2f6627;
     font-weight: 700;
     font-size: 16px;
-    float: right;
 }
 .book-a-call:hover {
     background: linear-gradient(270deg, #0BA5BE 5%, #205E89 100%);
@@ -110,13 +112,19 @@ header {
 @media only screen and (max-width: 1199px) {
 .brain-text{
     order: 13;
-
 }
 
 .brain-logo-lg{
     order:-1;
 }
 }
+
+@media only screen and (max-width: 1199px) {
+    body *{
+        text-align: center;
+    }
+}
+
 h1, .h1{
     color:#205E89;
     font-size:60px;
@@ -124,6 +132,9 @@ h1, .h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
         margin-left: -5px;
+}
+.h3, h3 {
+    font-size: 30px;
 }
 h1, h2, .h1, .h2{
     font-weight: 700;
@@ -173,6 +184,7 @@ h1, h2, .h1, .h2{
     font-weight: 700;
     font-size: 60px;
     padding: 20px 0;
+    margin-bottom:40px;
 }
 @media only screen and (max-width: 660px) {
     .book-a-call {
