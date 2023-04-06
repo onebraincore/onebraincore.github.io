@@ -609,7 +609,7 @@ h1, h2, .h1, .h2{
     animation: google-disk-anim 34s linear infinite;
     left: -3px;
     top: -359px;
-    animation-delay: -18s;
+    animation-delay: -19s;
 }
 
 .brain-circle-discord{
@@ -622,7 +622,7 @@ h1, h2, .h1, .h2{
     animation: google-disk-anim 34s linear infinite;
     left: 0px;
     top: -403px;
-    animation-delay: -21s;
+    animation-delay: -23s;
 }
 
 .brain-circle-clickup{
@@ -635,21 +635,22 @@ h1, h2, .h1, .h2{
     animation: google-disk-anim 34s linear infinite;
     left: 0px;
     top: -442px;
-    animation-delay: -24s;
+    animation-delay: -27s;
 }
 
 .brain-circle-hubspot{
-    width: 49px;
-    height: 60px;
+    width: 56px;
+    height: 59px;
     background-image: url(images/hubspot.svg);
     position: relative;
     overflow: hidden;
     margin: auto;
     animation: google-disk-anim 34s linear infinite;
     left: 0px;
-    top: -442px;
-    animation-delay: -24s;
+    top: -521px;
+    animation-delay: -31s;
 }
+
 
 
 @media only screen and (max-width: 432px){
