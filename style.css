@@ -5,10 +5,105 @@ body{
 }
 body p{
     font-size: 16px;
+    color: #6F7378;
+}
+a:focus, a:hover{
+    text-decoration: none;
+    color:#dbdbdb;
 }
 header {
     margin-bottom: 60px;
 }
+main {
+    margin-bottom: 100px;
+}
+footer {
+    padding-top: 40px;
+    background-color: #205E89;
+    color: white;
+    padding-bottom: 30px;
+}
+footer a{
+    color:white;
+}
+footer hr{
+    height: 1px;
+    width: 100%;
+    border-top-color: #0BA5BE;
+}
+.social-links-group {
+    text-align: right;
+    padding-top: 10px;
+}
+footer h5{
+    text-align: left;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    padding-left: 0;
+    text-align: left;
+    color:white;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    color:#ebebeb;
+    background-color: transparent;
+}
+footer h5 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.faq-list h1 {
+    padding-bottom: 20px;
+}
+.collapsible {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    rotate: 180deg;
+    float: right;
+    margin-right: -45px;
+    top: 0;
+    right: 60px;
+    margin-top: 0px;
+}
+
+button.collapsible:after {
+    content: '';
+    background-image: url(images/collapse-up.svg);
+    width: 26px;
+    height: 17px;
+    position: absolute;
+    border: 1px black;
+    left: 7px;
+    top: 9px;
+}
+
+.active, .collapsible:hover {
+  background-color: black;
+}
+
+button.collapsible.active:after {
+    rotate: 180deg;
+    top: 13px;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
 .d-inline {
     display: inline!important;
 } 
@@ -39,9 +134,50 @@ header {
 .align-middle {
     vertical-align: middle!important;
 }
+.align-top {
+    vertical-align: top!important;
+}
 .float-right{
     float:right;
 }
+.justify-content-start {
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important;
+    display: flex;
+}
+.justify-content-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+    display: flex;
+}
+
+.social-links-group img {
+    max-width: 40px;
+    margin: 0 15px;
+    box-shadow: 2px 2px 3px #000000;
+    border-radius: 200px;
+}
+
+.social-links-group img:last-child {
+    margin-right: 0px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .links-foot-left {
+        width: 95px;
+        float: right;
+    }   
+}
+
+@media only screen and (max-width: 767px) {
+    .social-links-group{
+        text-align: inherit;
+        padding-top: 30px;
+        margin-bottom:20px;
+    }
+}
+
 .blue-gradient-brand-name{
     background: -webkit-linear-gradient(0deg, rgba(32,94,137,1) 0%, rgba(67,247,252,1) 50%, rgba(11,165,190,1) 100%);
     -webkit-background-clip: text;
@@ -54,7 +190,7 @@ header {
     margin-left: -3px;
 }
 
-.book-a-call {
+.book-a-call, .join-the-waitlist {
     background: linear-gradient(270deg, #0BA5BE 5%, #205E89 100%);
     background-color: #44c767;
     border-radius: 28px;
@@ -65,6 +201,10 @@ header {
     text-shadow: 0px 1px 0px #2f6627;
     font-weight: 700;
     font-size: 16px;
+    margin-top: 5px;
+}
+a.join-the-waitlist {
+    margin-bottom: 80px;
 }
 .book-a-call:hover {
     background: linear-gradient(270deg, #0BA5BE 5%, #205E89 100%);
@@ -102,7 +242,99 @@ header {
 
 .brain-text{
     order: -1;
-    margin-bottom: 105px;
+    margin-bottom: 50px;
+}
+.brain-text p {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width:1200px){
+    .brain-text p{
+        margin: inherit;
+    }
+}
+.features h3{
+    font-size: 40px;
+
+}
+.d-flex {
+    display: flex!important;
+}
+.text-wrap {
+    white-space: normal!important;
+}
+.text-right{
+    text-align: right!important;
+}
+.text-left{
+    text-align: left!important;
+}
+.left-credentials, .right-credentials{
+    font-size: 12px;
+}
+@media only screen and (max-width: 767px) {
+    .left-credentials, .right-credentials{
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .right-credentials{
+        text-align: right;
+    }
+    .left-credentials{
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px){
+    .left-credentials {
+    text-align: center;
+    margin-left: -15px;
+    margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .right-credentials{
+    text-align: center;
+    margin-left: -60px;
+    }
+}
+
+@media (min-width: 576px){
+    .flex-sm-row {
+        flex-direction: row!important;
+    }
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+@media (max-width: 767px){
+    .host-or-cloud{
+        order:-1;
+    }
+}
+.gif-example img {
+    width: -webkit-fill-available;
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+.gif-title-margin {
+    margin-bottom: 80px;
+}
+.brain-text h2{
+    margin-bottom:20px;
+}
+.brain-text h1{
+    margin-bottom: 30px;
+    line-height: 90px;
 }
 
 .brain-logo-lg{
@@ -125,17 +357,56 @@ header {
     }
 }
 
+@media only screen and (max-width: 1199px) {
+    .brain-text{
+        margin-bottom:0px;
+    }
+}
+
 h1, .h1{
     color:#205E89;
     font-size:60px;
     background: linear-gradient(90deg, rgba(32,94,137,1) 35%, rgba(11,32,94,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-        margin-left: -5px;
+}
+@media only screen and (max-width: 320px) {
+    h1, .h1{
+        font-size: 50px;
+    }
 }
 .h3, h3 {
     font-size: 30px;
+    margin-bottom: 60px;
+    color: black;
 }
+.h2, h2 {
+    font-size: 40px;
+    color:black;
+}
+
+
+@media only screen and (max-width: 432px){
+    .gif-example img{
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 432px){
+    h2 {
+        font-size: 30px ;
+    }
+}
+.faq-block {
+    margin-bottom: 30px;
+    padding-right: 70px;
+    position: relative;
+}
+@media only screen and (max-width: 432px){
+    .faq-list h2 {
+        font-size: 25px;
+    }
+}
+
 h1, h2, .h1, .h2{
     font-weight: 700;
 }
@@ -185,9 +456,19 @@ h1, h2, .h1, .h2{
     font-size: 60px;
     padding: 20px 0;
     margin-bottom:40px;
+    color:black;
+}
+@media only screen and (max-width: 425px) {
+    #brain-timer{
+        font-size: 40px;
+    }
+
+    .timer-days:after, .timer-hours:after, .timer-minutes:after, .timer-seconds:after{
+        top:50px;
+    }
 }
 @media only screen and (max-width: 660px) {
-    .book-a-call {
+    .brain-section .book-a-call {
         display: none;        
     }
 }
@@ -211,7 +492,11 @@ h1, h2, .h1, .h2{
   }
 }
 
-
+.slides-block{
+        max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 
 .brain-circle-google-disk{
         width: 54px;
@@ -223,6 +508,15 @@ h1, h2, .h1, .h2{
     animation: circle 34s linear infinite;
     left: -3px;
     top: -118px;
+}
+
+@media only screen and (max-width: 432px){
+    .gif-example img{
+        margin-bottom: 60px;
+    }
+    .slides-block{
+        margin-bottom:0px;
+    }
 }
 
 @keyframes circle{
