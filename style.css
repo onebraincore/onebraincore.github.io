@@ -56,6 +56,7 @@ footer h5 {
 }
 .faq-list h1 {
     padding-bottom: 20px;
+    text-align: left;
 }
 .collapsible {
     background-color: black;
@@ -114,7 +115,7 @@ button.collapsible.active:after {
     height: 56px;
 }
 .brain-logo-lg img{
-        margin-top: 30px;
+        margin-top: 45px;
     height: 195px;
 }
 .brand-name *{
@@ -331,6 +332,7 @@ a.join-the-waitlist {
 }
 .brain-text h2{
     margin-bottom:20px;
+    letter-spacing: 1px;
 }
 .brain-text h1{
     margin-bottom: 30px;
