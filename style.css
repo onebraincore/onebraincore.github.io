@@ -483,7 +483,14 @@ h1, h2, .h1, .h2{
     padding: 20px 0;
     margin-bottom:40px;
     color:white;
+    overflow:hidden;
+    text-overflow: hidden;
 }
+@media only screen and (max-width: 551px) {
+     .mobile-none br{
+        display: none;
+     }
+ }
 @media only screen and (max-width: 425px) {
     #brain-timer{
         font-size: 40px;
