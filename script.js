@@ -1,7 +1,7 @@
 
 /* Timer*/
 
-if (window.location.href.indexOf('index.html') > -1) {
+if (window.location.href.indexOf('https://onebrain.io/') > -1) {
 
 
 // Set the date we're counting down to
@@ -21,7 +21,8 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+days = 30;
+hours = 0;
   // Display the result in the element with id="demo"
   document.getElementById("brain-timer").innerHTML = "<div class = 'timer-days d-inline'>" + days + "</div>"+":"+"<div class = 'timer-hours d-inline'>" + hours+ "</div>"+":" +"<div class = 'timer-minutes d-inline'>"+ minutes +"</div>"+":" +"<div class = 'timer-seconds d-inline'>" + seconds + "</div>";
 
