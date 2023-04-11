@@ -13,7 +13,7 @@ body p{
 }
 a:focus, a:hover{
     text-decoration: none;
-    color:#dbdbdb;
+    color: black;
 }
 header {
     margin-bottom: 60px;
@@ -232,7 +232,7 @@ a.join-the-waitlist {
 .book-a-call:hover {
     background: linear-gradient(270deg, #fd5ce5 5%, #205E89 100%);
     background-color: #44c767;
-    color: #ffffff;
+    color: #000000;
 }
 .book-a-call:active {
     position:relative;
