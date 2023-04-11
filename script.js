@@ -23,6 +23,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 days = 30;
 hours = 0;
+minutes = 0;
+seconds = 0;
   // Display the result in the element with id="demo"
   document.getElementById("brain-timer").innerHTML = "<div class = 'timer-days d-inline'>" + days + "</div>"+":"+"<div class = 'timer-hours d-inline'>" + hours+ "</div>"+":" +"<div class = 'timer-minutes d-inline'>"+ minutes +"</div>"+":" +"<div class = 'timer-seconds d-inline'>" + seconds + "</div>";
 
