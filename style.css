@@ -349,9 +349,21 @@ a.join-the-waitlist {
     max-width: 400px;
     margin-bottom: 40px;
 }
+
+
+
 .gif-title-margin {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 1199px){
+
+    .gif-title-margin {
+    margin-bottom: 90px;
+    }
+
+}
+
 .brain-text h2{
     margin-bottom:20px;
     letter-spacing: 1px;
