@@ -351,6 +351,16 @@ a.join-the-waitlist {
 }
 
 
+iframe {
+    filter: invert(1);
+}
+
+@media (max-width: 767px){
+    iframe{
+        width:250px;
+    }
+}
+
 
 .gif-title-margin {
     margin-bottom: 40px;
