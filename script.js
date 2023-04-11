@@ -1,7 +1,7 @@
 
 /* Timer*/
 
-if (window.location.href.indexOf('index2.html') > -1) {
+if (window.location.href.indexOf('index.html') > -1) {
 
 
 // Set the date we're counting down to

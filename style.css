@@ -482,7 +482,7 @@ h1, h2, .h1, .h2{
     font-size: 60px;
     padding: 20px 0;
     margin-bottom:40px;
-    color:black;
+    color:white;
 }
 @media only screen and (max-width: 425px) {
     #brain-timer{
