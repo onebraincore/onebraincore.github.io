@@ -2,6 +2,7 @@
 
 html{
     filter:invert(1);
+    background-color: black;
 }
 body{
     font-family: "Poppins";
@@ -211,7 +212,11 @@ button.collapsible.active:after {
     margin-left: -3px;
     filter: invert(1);
 }
-
+@media only screen and (max-width: 999px){
+    #player1, #player2, #player3, #player4, #player5, #player6{
+        width: 100%!important;
+    }
+}
 .book-a-call, .join-the-waitlist {
     background: linear-gradient(270deg, #fd5ce5 5%, #205E89 100%);
     background-color: #44c767;

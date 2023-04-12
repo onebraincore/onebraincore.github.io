@@ -166,8 +166,8 @@ var tag = document.createElement('script');
 
       function onYouTubeIframeAPIReady() {
         player1 = new YT.Player('player1', {
-          height: '390',
-          width: '640',
+          height: '500',
+          width: '900',
           videoId: 'mZxGBb7pg_c',
           playerVars: {
             'playsinline': 1,
@@ -181,8 +181,8 @@ var tag = document.createElement('script');
           }
         });
         player2 = new YT.Player('player2', {
-          height: '390',
-          width: '640',
+          height: '500',
+          width: '900',
           videoId: 'wfAozm2F_yg',
           playerVars: {
             'playsinline': 1,
@@ -196,8 +196,8 @@ var tag = document.createElement('script');
           }
         });
         player3 = new YT.Player('player3', {
-          height: '390',
-          width: '640',
+          height: '500',
+          width: '900',
           videoId: '1TY-v2a3BK4',
           playerVars: {
             'playsinline': 1,
@@ -211,8 +211,8 @@ var tag = document.createElement('script');
           }
         });
         player4 = new YT.Player('player4', {
-          height: '390',
-          width: '640',
+          height: '500',
+          width: '900',
           videoId: 'ZU6XFyjVb0U',
           playerVars: {
             'playsinline': 1,
@@ -226,8 +226,8 @@ var tag = document.createElement('script');
           }
         });
         player5 = new YT.Player('player5', {
-          height: '390',
-          width: '640',
+          height: '500',
+          width: '900',
           videoId: 'nkhOKmT_flQ',
           playerVars: {
             'playsinline': 1,
@@ -241,8 +241,8 @@ var tag = document.createElement('script');
           }
         });
         player6 = new YT.Player('player6', {
-          height: '390',
-          width: '640',
+          height: '500',
+          width: '900',
           videoId: 'jLXeNEcBYR4',
           playerVars: {
             'playsinline': 1,
