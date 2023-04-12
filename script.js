@@ -313,7 +313,7 @@ var tag = document.createElement('script');
         player5.pauseVideo();
       }
 
-      let videoElement6 = $(document).find('#player6x');
+      let videoElement6 = $(document).find('#player6');
       let boolView6 = videoElement6.isInViewport();
       if(boolView6){
         player6.playVideo();
