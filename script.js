@@ -56,3 +56,269 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 /* END Collapsible content */
+
+
+/* Play videos on scrolling */
+
+
+/*
+window.onload = function() {
+
+    var videos = document.getElementsByTagName("iframe"),
+        fraction = 0.8;
+        console.log("elements");
+        console.log(videos);
+
+    function checkScroll() {
+
+        for (var i = 0; i < videos.length; i++) {
+
+            var video = videos[i];
+            
+            console.log('videos[i]');
+            console.log(videos[i]);
+            
+            var x = video.offsetLeft,
+                y = video.offsetTop,
+                w = video.offsetWidth,
+                h = parseInt(video.height,10),
+                r = x + w, //right
+                b = y + h, //bottom
+                visibleX, visibleY, visible;
+            console.log('video.offsetTop');
+            console.log(video.offsetTop);
+
+            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+            console.log('visibleX');
+            console.log(visibleX);
+            console.log('visibleY');
+            console.log(visibleY);
+
+            visible = visibleX * visibleY / (w * h);
+
+            if (visible > fraction) {
+                console.log('visible');
+            } else {
+                console.log('not visible');
+            }
+
+        }
+
+    }
+
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+}*/
+
+function inViewport(item) {
+  var elementTop = item.offset().top;
+  var elementBottom = elementTop + item.outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+}
+
+$.fn.isInViewport = function() {
+  const elements = this;
+  const found = elements.filter(function() {
+    const item = $(this);
+    return inViewport(item);
+  });
+  return !!found.length;
+};
+
+function replaceUrlParam(url, paramName, paramValue)
+{
+    if (paramValue == null) {
+        paramValue = '';
+    }
+    var pattern = new RegExp('\\b('+paramName+'=).*?(&|#|$)');
+    if (url.search(pattern)>=0) {
+        return url.replace(pattern,'$1' + paramValue + '$2');
+    }
+    url = url.replace(/[?#]$/,'');
+    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue;
+}
+
+
+
+
+
+
+
+/* END play videos on scrolling */
+
+var tag = document.createElement('script');
+ tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+
+      var player1;
+      var player2;
+      var player3;
+      var player4;
+      var player5;
+      var player6;
+
+      function onYouTubeIframeAPIReady() {
+        player1 = new YT.Player('player1', {
+          height: '390',
+          width: '640',
+          videoId: 'mZxGBb7pg_c',
+          playerVars: {
+            'playsinline': 1,
+            "mute":1,
+            'autoplay': 1,
+            "loop":1,
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        player2 = new YT.Player('player2', {
+          height: '390',
+          width: '640',
+          videoId: 'wfAozm2F_yg',
+          playerVars: {
+            'playsinline': 1,
+            "mute":1,
+            'autoplay': 1,
+            "loop":1,
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        player3 = new YT.Player('player3', {
+          height: '390',
+          width: '640',
+          videoId: '1TY-v2a3BK4',
+          playerVars: {
+            'playsinline': 1,
+            "mute":1,
+            'autoplay': 1,
+            "loop":1,
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        player4 = new YT.Player('player4', {
+          height: '390',
+          width: '640',
+          videoId: 'ZU6XFyjVb0U',
+          playerVars: {
+            'playsinline': 1,
+            "mute":1,
+            'autoplay': 1,
+            "loop":1,
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        player5 = new YT.Player('player5', {
+          height: '390',
+          width: '640',
+          videoId: 'nkhOKmT_flQ',
+          playerVars: {
+            'playsinline': 1,
+            "mute":1,
+            'autoplay': 1,
+            "loop":1,
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        player6 = new YT.Player('player6', {
+          height: '390',
+          width: '640',
+          videoId: 'jLXeNEcBYR4',
+          playerVars: {
+            'playsinline': 1,
+            "mute":1,
+            'autoplay': 1,
+            "loop":1,
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          // setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+
+      
+
+    window.onscroll = function() {
+
+      let videoElement = $(document).find('#player1');
+      let boolView = videoElement.isInViewport();
+      if(boolView){
+        player1.playVideo();
+      }else{
+        player1.pauseVideo();
+      }
+
+      let videoElement2 = $(document).find('#player2');
+      let boolView2 = videoElement2.isInViewport();
+      if(boolView2){
+        player2.playVideo();
+      }else{
+        player2.pauseVideo();
+      }
+
+      let videoElement3 = $(document).find('#player3');
+      let boolView3 = videoElement3.isInViewport();
+      if(boolView3){
+        player3.playVideo();
+      }else{
+        player3.pauseVideo();
+      }
+
+      let videoElement4 = $(document).find('#player4');
+      let boolView4 = videoElement4.isInViewport();
+      if(boolView4){
+        player4.playVideo();
+      }else{
+        player4.pauseVideo();
+      }
+
+      let videoElement5 = $(document).find('#player5');
+      let boolView5 = videoElement5.isInViewport();
+      if(boolView5){
+        player5.playVideo();
+      }else{
+        player5.pauseVideo();
+      }
+
+      let videoElement6 = $(document).find('#player6x');
+      let boolView6 = videoElement6.isInViewport();
+      if(boolView6){
+        player6.playVideo();
+      }else{
+        player6.pauseVideo();
+      }
+
+    }
