@@ -61,57 +61,6 @@ for (i = 0; i < coll.length; i++) {
 /* Play videos on scrolling */
 
 
-/*
-window.onload = function() {
-
-    var videos = document.getElementsByTagName("iframe"),
-        fraction = 0.8;
-        console.log("elements");
-        console.log(videos);
-
-    function checkScroll() {
-
-        for (var i = 0; i < videos.length; i++) {
-
-            var video = videos[i];
-            
-            console.log('videos[i]');
-            console.log(videos[i]);
-            
-            var x = video.offsetLeft,
-                y = video.offsetTop,
-                w = video.offsetWidth,
-                h = parseInt(video.height,10),
-                r = x + w, //right
-                b = y + h, //bottom
-                visibleX, visibleY, visible;
-            console.log('video.offsetTop');
-            console.log(video.offsetTop);
-
-            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-
-            console.log('visibleX');
-            console.log(visibleX);
-            console.log('visibleY');
-            console.log(visibleY);
-
-            visible = visibleX * visibleY / (w * h);
-
-            if (visible > fraction) {
-                console.log('visible');
-            } else {
-                console.log('not visible');
-            }
-
-        }
-
-    }
-
-    window.addEventListener('scroll', checkScroll, false);
-    window.addEventListener('resize', checkScroll, false);
-}*/
-
 function inViewport(item) {
   var elementTop = item.offset().top;
   var elementBottom = elementTop + item.outerHeight();
@@ -144,10 +93,6 @@ function replaceUrlParam(url, paramName, paramValue)
 
 
 
-
-
-
-
 /* END play videos on scrolling */
 
 var tag = document.createElement('script');
@@ -168,13 +113,13 @@ var tag = document.createElement('script');
         player1 = new YT.Player('player1', {
           height: '500',
           width: '900',
-          videoId: 'mZxGBb7pg_c',
+          videoId: '8icnsUKuTjc',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'mZxGBb7pg_c',
+            'playlist': '8icnsUKuTjc',
           },
           events: {
             'onReady': onPlayerReady,
