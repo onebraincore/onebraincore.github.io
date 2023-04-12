@@ -174,6 +174,7 @@ var tag = document.createElement('script');
             "mute":1,
             'autoplay': 1,
             "loop":1,
+            'playlist': 'mZxGBb7pg_c',
           },
           events: {
             'onReady': onPlayerReady,
@@ -189,6 +190,7 @@ var tag = document.createElement('script');
             "mute":1,
             'autoplay': 1,
             "loop":1,
+            'playlist': 'wfAozm2F_yg',
           },
           events: {
             'onReady': onPlayerReady,
@@ -204,6 +206,7 @@ var tag = document.createElement('script');
             "mute":1,
             'autoplay': 1,
             "loop":1,
+            'playlist': '1TY-v2a3BK4',
           },
           events: {
             'onReady': onPlayerReady,
@@ -219,6 +222,7 @@ var tag = document.createElement('script');
             "mute":1,
             'autoplay': 1,
             "loop":1,
+            'playlist': 'ZU6XFyjVb0U',
           },
           events: {
             'onReady': onPlayerReady,
@@ -234,6 +238,7 @@ var tag = document.createElement('script');
             "mute":1,
             'autoplay': 1,
             "loop":1,
+            'playlist': 'nkhOKmT_flQ',
           },
           events: {
             'onReady': onPlayerReady,
@@ -249,6 +254,7 @@ var tag = document.createElement('script');
             "mute":1,
             'autoplay': 1,
             "loop":1,
+            'playlist': 'jLXeNEcBYR4',
           },
           events: {
             'onReady': onPlayerReady,
