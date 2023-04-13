@@ -113,13 +113,13 @@ var tag = document.createElement('script');
         player1 = new YT.Player('player1', {
           height: '500',
           width: '900',
-          videoId: '8icnsUKuTjc',
+          videoId: 'mZxGBb7pg_c',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': '8icnsUKuTjc',
+            'playlist': 'mZxGBb7pg_c',
           },
           events: {
             'onReady': onPlayerReady,
@@ -129,13 +129,13 @@ var tag = document.createElement('script');
         player2 = new YT.Player('player2', {
           height: '500',
           width: '900',
-          videoId: 'wfAozm2F_yg',
+          videoId: '9xY1HsHo324',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'wfAozm2F_yg',
+            'playlist': '9xY1HsHo324',
           },
           events: {
             'onReady': onPlayerReady,
@@ -145,13 +145,13 @@ var tag = document.createElement('script');
         player3 = new YT.Player('player3', {
           height: '500',
           width: '900',
-          videoId: '1TY-v2a3BK4',
+          videoId: '4N9A2h76YKM',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': '1TY-v2a3BK4',
+            'playlist': '4N9A2h76YKM',
           },
           events: {
             'onReady': onPlayerReady,
@@ -161,13 +161,13 @@ var tag = document.createElement('script');
         player4 = new YT.Player('player4', {
           height: '500',
           width: '900',
-          videoId: 'ZU6XFyjVb0U',
+          videoId: '4N9A2h76YKM',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'ZU6XFyjVb0U',
+            'playlist': '4N9A2h76YKM',
           },
           events: {
             'onReady': onPlayerReady,
@@ -177,13 +177,13 @@ var tag = document.createElement('script');
         player5 = new YT.Player('player5', {
           height: '500',
           width: '900',
-          videoId: 'nkhOKmT_flQ',
+          videoId: '1YTRr2zod1w',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'nkhOKmT_flQ',
+            'playlist': '1YTRr2zod1w',
           },
           events: {
             'onReady': onPlayerReady,
@@ -193,13 +193,13 @@ var tag = document.createElement('script');
         player6 = new YT.Player('player6', {
           height: '500',
           width: '900',
-          videoId: 'jLXeNEcBYR4',
+          videoId: '0Dwocg9HnOw',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'jLXeNEcBYR4',
+            'playlist': '0Dwocg9HnOw',
           },
           events: {
             'onReady': onPlayerReady,
@@ -273,3 +273,14 @@ var tag = document.createElement('script');
       }
 
     }
+
+/* END Play videos on scrolling */
+
+
+/* Magnetic scrolling */
+
+
+
+
+
+/* END Magnetic scrolling */
