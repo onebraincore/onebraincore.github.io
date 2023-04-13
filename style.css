@@ -3,6 +3,13 @@
 html{
     filter:invert(1);
     background-color: black;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+section {
+/*    height: 100vh;*/
+    scroll-snap-align: start;
 }
 body{
     font-family: "Poppins";
