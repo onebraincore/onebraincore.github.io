@@ -113,13 +113,13 @@ var tag = document.createElement('script');
         player1 = new YT.Player('player1', {
           height: '500',
           width: '900',
-          videoId: 'mZxGBb7pg_c',
+          videoId: 'DAACfneP7fY',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'mZxGBb7pg_c',
+            'playlist': 'DAACfneP7fY',
           },
           events: {
             'onReady': onPlayerReady,
