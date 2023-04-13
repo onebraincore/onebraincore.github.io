@@ -32,6 +32,7 @@ main {
 footer {
     padding-top: 40px;
     background-color: #a25dbf;
+    background:linear-gradient(360deg, #fd5ce5 5%, #205E89 100%);
     color: white;
     padding-bottom: 30px;
     filter: invert(1);
