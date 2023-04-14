@@ -294,12 +294,15 @@ $(document).ready(function(){
 
 /* Anchor navigation hiding */
 
-if (window.location.href.indexOf('index.html') > -1) {
-
+if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+console.log('HERRERERE');
     window.onscroll = function() {
       let pixelsFromTop = window.scrollY;
 
+console.log('pixelsFromTop');
+console.log(pixelsFromTop);
       if((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height())){
+        console.log('here');
         if($('#magnetic-navigation').hasClass("d-none")){
           $('#magnetic-navigation').removeClass("d-none");
         }
@@ -360,5 +363,5 @@ tsParticles
     console.error(error);
   });
    
-   
+
 /* END particles run */
