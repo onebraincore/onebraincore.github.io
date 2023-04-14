@@ -723,7 +723,85 @@ h1, h2, .h1, .h2{
     filter: invert(1);
 }
 
+@media only screen and (max-width:425px){
+    #magnetic-navigation{
+        display: none;
+    }
+}
 
+#magnetic-navigation {
+    position: fixed;
+    text-align: left;
+    z-index: 99;
+    top: 50%;
+    margin-top: -130px;
+}
+
+#magnetic-navigation i{
+    font-size: 30px;
+    color: #fd5ce5;
+}
+
+#magnetic-navigation i:hover{
+    color:#ff9af0;
+    cursor:pointer;
+}
+#magnetic-navigation i.viewing{
+    color:#43f7fc;
+    cursor:pointer;
+}
+
+/*#magnetic-navigation i:hover{
+    color:#43f7fc;
+    cursor:pointer;
+}*/
+.d-none{
+    display: none;
+}
+#magnetic-navigation ul {
+    list-style: none;
+    top:-20px;
+}
+
+#magnetic-navigation ul li{
+    margin-bottom: 15px;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip{
+    position: absolute;
+    width: 300px;
+    border:0;
+}
+
+.purple-tooltip + .tooltip > .tooltip-inner {background-color: #fd5ce5; color:black; filter:invert(1); border-bottom: none}
+
+body i {
+    filter: invert(1);
+}
 
 @media only screen and (max-width: 432px){
     .gif-example img{
