@@ -55,7 +55,8 @@ footer hr{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: 0;
+  filter: invert(1);
 }
 .social-links-group {
     text-align: right;
