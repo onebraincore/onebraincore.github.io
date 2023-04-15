@@ -227,6 +227,10 @@ var tag = document.createElement('script');
       
 
     window.onscroll = function() {
+
+      console.log('scrolling');
+
+
       let videoElement = $(document).find('#player1');
       let boolView = videoElement.isInViewport();
       
