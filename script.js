@@ -359,14 +359,14 @@ if (window.location.href.indexOf('https://onebrain.io/') > -1) {
 
 /* Particles run */
 
-    tsParticles
-  .loadJSON("tsparticles", "particles.json")
-  .then((container) => {
-    console.log("callback - tsparticles config loaded");
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+  //   tsParticles
+  // .loadJSON("tsparticles", "particles.json")
+  // .then((container) => {
+  //   console.log("callback - tsparticles config loaded");
+  // })
+  // .catch((error) => {
+  //   console.error(error);
+  // });
    
 
 /* END particles run */
