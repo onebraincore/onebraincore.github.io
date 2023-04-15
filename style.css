@@ -236,7 +236,12 @@ button.collapsible.active:after {
 @media only screen and (max-width: 999px){
     #player1, #player2, #player3, #player4, #player5, #player6{
         width: 100%!important;
+
     }
+}
+
+#player1 *, #player2 *, #player3 *, #player4 *, #player5 *, #player6 *{
+filter: invert(1);
 }
 .book-a-call, .join-the-waitlist {
     background: linear-gradient(270deg, #fd5ce5 5%, #205E89 100%);

@@ -1,6 +1,6 @@
 /* Timer*/
 
-if (window.location.href.indexOf('index.html') > -1) {
+if (window.location.href.indexOf('https://onebrain.io/') > -1) {
 
 
 // Set the date we're counting down to
@@ -294,7 +294,7 @@ $(document).ready(function(){
 
 
 addEventListener("scroll", (event) => {
-  if (window.location.href.indexOf('index.html') > -1) {
+  if (window.location.href.indexOf('https://onebrain.io/') > -1) {
     let pixelsFromTop = window.scrollY;
     console.log('scrolling');
     
