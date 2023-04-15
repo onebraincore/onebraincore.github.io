@@ -60,7 +60,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 /* Play videos on scrolling */
-
+if (window.location.href.indexOf('https://onebrain.io/') > -1) {
 
 function inViewport(item) {
   var elementTop = item.offset().top;
@@ -95,7 +95,7 @@ function replaceUrlParam(url, paramName, paramValue)
 
 
 /* END play videos on scrolling */
-if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+
 var tag = document.createElement('script');
  tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
