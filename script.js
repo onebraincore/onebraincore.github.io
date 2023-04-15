@@ -95,7 +95,7 @@ function replaceUrlParam(url, paramName, paramValue)
 
 
 /* END play videos on scrolling */
-
+if (window.location.href.indexOf('index.html') > -1) {
 var tag = document.createElement('script');
  tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -208,9 +208,8 @@ var tag = document.createElement('script');
           }
         });
       }
-
       function onPlayerReady(event) {
-        event.target.playVideo();
+        // event.target.playVideo();
       }
 
       var done = false;
@@ -221,6 +220,9 @@ var tag = document.createElement('script');
         }
       }
 
+    }
+
+      
       
 
     window.onscroll = function() {
@@ -273,28 +275,8 @@ var tag = document.createElement('script');
         player6.pauseVideo();
       }
 
-    }
 
-/* END Play videos on scrolling */
-
-
-/* Magnetic scrolling */
-
-
-
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
-
-/* END Magnetic scrolling */
-
-
-/* Anchor navigation hiding */
-
-
-
-addEventListener("scroll", (event) => {
-  if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+      
     let pixelsFromTop = window.scrollY;
     console.log('scrolling');
     
@@ -319,8 +301,31 @@ addEventListener("scroll", (event) => {
         magneticNavItem.removeClass('viewing');
       }
     }
-  }
+  
+
+    }
+
+/* END Play videos on scrolling */
+
+
+/* Magnetic scrolling */
+
+
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
 });
+
+/* END Magnetic scrolling */
+
+
+/* Anchor navigation hiding */
+
+
+
+// addEventListener("scroll", (event) => {
+  
+// });
 
 /* END Anchor navigation hiding */
 
