@@ -227,7 +227,6 @@ var tag = document.createElement('script');
       
 
     window.onscroll = function() {
-
       let videoElement = $(document).find('#player1');
       let boolView = videoElement.isInViewport();
       if(boolView){
@@ -286,7 +285,14 @@ var tag = document.createElement('script');
 
 
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+  $('[data-toggle="tooltip"]').tooltip();
+  
+  player1.pauseVideo();
+  player2.pauseVideo();
+  player3.pauseVideo();
+  player4.pauseVideo();
+  player5.pauseVideo();
+  player6.pauseVideo();
 });
 
 /* END Magnetic scrolling */
@@ -295,14 +301,10 @@ $(document).ready(function(){
 /* Anchor navigation hiding */
 
 if (window.location.href.indexOf('https://onebrain.io/') > -1) {
-console.log('HERRERERE');
+
     window.onscroll = function() {
       let pixelsFromTop = window.scrollY;
-
-console.log('pixelsFromTop');
-console.log(pixelsFromTop);
       if((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height())){
-        console.log('here');
         if($('#magnetic-navigation').hasClass("d-none")){
           $('#magnetic-navigation').removeClass("d-none");
         }
