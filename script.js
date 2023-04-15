@@ -1,8 +1,3 @@
-
-
-
-
-
 /* Timer*/
 
 if (window.location.href.indexOf('https://onebrain.io/') > -1) {
@@ -133,13 +128,13 @@ var tag = document.createElement('script');
         player2 = new YT.Player('player2', {
           height: '500',
           width: '900',
-          videoId: 'UALRgeYdjXg',
+          videoId: 'PinEsrZePvk',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'UALRgeYdjXg',
+            'playlist': 'PinEsrZePvk',
           },
           events: {
             'onReady': onPlayerReady,
@@ -165,13 +160,13 @@ var tag = document.createElement('script');
         player4 = new YT.Player('player4', {
           height: '500',
           width: '900',
-          videoId: 'PinEsrZePvk',
+          videoId: '4N9A2h76YKM',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'PinEsrZePvk',
+            'playlist': '4N9A2h76YKM',
           },
           events: {
             'onReady': onPlayerReady,
@@ -225,23 +220,14 @@ var tag = document.createElement('script');
       }
 
       
-console.log('before scrolling');
+
     window.onscroll = function() {
-
-      console.log('scrolling');
-
 
       let videoElement = $(document).find('#player1');
       let boolView = videoElement.isInViewport();
-      
-      console.log('boolView');
-      console.log(boolView);
-
       if(boolView){
-        console.log('true');
         player1.playVideo();
       }else{
-        console.log('false');
         player1.pauseVideo();
       }
 
@@ -295,7 +281,7 @@ console.log('before scrolling');
 
 
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip();   
 });
 
 /* END Magnetic scrolling */
@@ -303,10 +289,11 @@ $(document).ready(function(){
 
 /* Anchor navigation hiding */
 
-if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+if (window.location.href.indexOf('index.html') > -1) {
 
     window.onscroll = function() {
       let pixelsFromTop = window.scrollY;
+
       if((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height())){
         if($('#magnetic-navigation').hasClass("d-none")){
           $('#magnetic-navigation').removeClass("d-none");
@@ -354,19 +341,3 @@ if (window.location.href.indexOf('https://onebrain.io/') > -1) {
 
     }
 }
-
-/* END Anchor navigation hiding */
-
-/* Particles run */
-
-  //   tsParticles
-  // .loadJSON("tsparticles", "particles.json")
-  // .then((container) => {
-  //   console.log("callback - tsparticles config loaded");
-  // })
-  // .catch((error) => {
-  //   console.error(error);
-  // });
-   
-
-/* END particles run */
