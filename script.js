@@ -311,11 +311,11 @@ var tag = document.createElement('script');
 /* Magnetic scrolling */
 
 
-
+if (window.location.pathname== '/') {
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
-
+}
 /* END Magnetic scrolling */
 
 
