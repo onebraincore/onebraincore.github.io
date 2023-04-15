@@ -20,6 +20,9 @@ body p{
     color: #c3c3c3;
     filter: invert(1);
 }
+.faq-block .content a:hover {
+    color: #2e96ef;
+}
 a:focus, a:hover{
     text-decoration: none;
     color: black;
