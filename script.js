@@ -36,55 +36,7 @@ seconds = 0;
 
   // Your JavaScript code here
 
-window.onscroll = function() {
-      let pixelsFromTop = window.scrollY;
-console.log('scrolling');
-      if((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height())){
-        if($('#magnetic-navigation').hasClass("d-none")){
-          $('#magnetic-navigation').removeClass("d-none");
-        }
-      }else{
-        $('#magnetic-navigation').addClass("d-none");
-      }
 
-
-      if(((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section1').offset().top)+$('#section1').height()))){
-        $('#magnetic-navigation li:nth-child(1) i').addClass('viewing');
-      }else{
-        $('#magnetic-navigation li:nth-child(1) i').removeClass('viewing');
-      }
-
-      if(((pixelsFromTop>($('#section2').offset().top-1))&&(pixelsFromTop<($('#section2').offset().top)+$('#section2').height()))){
-        $('#magnetic-navigation li:nth-child(2) i').addClass('viewing');
-      }else{
-        $('#magnetic-navigation li:nth-child(2) i').removeClass('viewing');
-      }
-
-      if(((pixelsFromTop>($('#section3').offset().top-1))&&(pixelsFromTop<($('#section3').offset().top)+$('#section3').height()))){
-        $('#magnetic-navigation li:nth-child(3) i').addClass('viewing');
-      }else{
-        $('#magnetic-navigation li:nth-child(3) i').removeClass('viewing');
-      }
-
-      if(((pixelsFromTop>($('#section4').offset().top-1))&&(pixelsFromTop<($('#section4').offset().top)+$('#section4').height()))){
-        $('#magnetic-navigation li:nth-child(4) i').addClass('viewing');
-      }else{
-        $('#magnetic-navigation li:nth-child(4) i').removeClass('viewing');
-      }
-
-      if(((pixelsFromTop>($('#section5').offset().top-1))&&(pixelsFromTop<($('#section5').offset().top)+$('#section5').height()))){
-        $('#magnetic-navigation li:nth-child(5) i').addClass('viewing');
-      }else{
-        $('#magnetic-navigation li:nth-child(5) i').removeClass('viewing');
-      }
-
-      if(((pixelsFromTop>($('#section6').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height()))){
-        $('#magnetic-navigation li:nth-child(6) i').addClass('viewing');
-      }else{
-        $('#magnetic-navigation li:nth-child(6) i').removeClass('viewing');
-      }
-
-    }
 }
 
 /* END Timer */
@@ -339,10 +291,61 @@ $(document).ready(function(){
 
 /* Anchor navigation hiding */
 
-// if (window.location.href.indexOf('index.html') > -1) {
 
-    
-// }
+
+    window.onscroll = function() {
+      if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+        
+      let pixelsFromTop = window.scrollY;
+console.log('scrolling');
+      if((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height())){
+        if($('#magnetic-navigation').hasClass("d-none")){
+          $('#magnetic-navigation').removeClass("d-none");
+        }
+      }else{
+        $('#magnetic-navigation').addClass("d-none");
+      }
+
+
+      if(((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section1').offset().top)+$('#section1').height()))){
+        $('#magnetic-navigation li:nth-child(1) i').addClass('viewing');
+      }else{
+        $('#magnetic-navigation li:nth-child(1) i').removeClass('viewing');
+      }
+
+      if(((pixelsFromTop>($('#section2').offset().top-1))&&(pixelsFromTop<($('#section2').offset().top)+$('#section2').height()))){
+        $('#magnetic-navigation li:nth-child(2) i').addClass('viewing');
+      }else{
+        $('#magnetic-navigation li:nth-child(2) i').removeClass('viewing');
+      }
+
+      if(((pixelsFromTop>($('#section3').offset().top-1))&&(pixelsFromTop<($('#section3').offset().top)+$('#section3').height()))){
+        $('#magnetic-navigation li:nth-child(3) i').addClass('viewing');
+      }else{
+        $('#magnetic-navigation li:nth-child(3) i').removeClass('viewing');
+      }
+
+      if(((pixelsFromTop>($('#section4').offset().top-1))&&(pixelsFromTop<($('#section4').offset().top)+$('#section4').height()))){
+        $('#magnetic-navigation li:nth-child(4) i').addClass('viewing');
+      }else{
+        $('#magnetic-navigation li:nth-child(4) i').removeClass('viewing');
+      }
+
+      if(((pixelsFromTop>($('#section5').offset().top-1))&&(pixelsFromTop<($('#section5').offset().top)+$('#section5').height()))){
+        $('#magnetic-navigation li:nth-child(5) i').addClass('viewing');
+      }else{
+        $('#magnetic-navigation li:nth-child(5) i').removeClass('viewing');
+      }
+
+      if(((pixelsFromTop>($('#section6').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height()))){
+        $('#magnetic-navigation li:nth-child(6) i').addClass('viewing');
+      }else{
+        $('#magnetic-navigation li:nth-child(6) i').removeClass('viewing');
+      }
+
+    }
+
+}
 
 /* END Anchor navigation hiding */
 
