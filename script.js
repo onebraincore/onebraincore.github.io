@@ -121,6 +121,7 @@ var tag = document.createElement('script');
             'autoplay': 1,
             "loop":1,
             'playlist': 'DAACfneP7fY',
+            'vq':'hd1080'
           },
           events: {
             'onReady': onPlayerReady,
@@ -137,6 +138,7 @@ var tag = document.createElement('script');
             'autoplay': 1,
             "loop":1,
             'playlist': 'UALRgeYdjXg',
+            'vq':'hd1080'
           },
           events: {
             'onReady': onPlayerReady,
@@ -153,6 +155,7 @@ var tag = document.createElement('script');
             'autoplay': 1,
             "loop":1,
             'playlist': '4N9A2h76YKM',
+            'vq':'hd1080'
           },
           events: {
             'onReady': onPlayerReady,
@@ -169,6 +172,7 @@ var tag = document.createElement('script');
             'autoplay': 1,
             "loop":1,
             'playlist': 'PinEsrZePvk',
+            'vq':'hd1080'
           },
           events: {
             'onReady': onPlayerReady,
@@ -185,6 +189,7 @@ var tag = document.createElement('script');
             'autoplay': 1,
             "loop":1,
             'playlist': '1YTRr2zod1w',
+            'vq':'hd1080'
           },
           events: {
             'onReady': onPlayerReady,
@@ -201,6 +206,7 @@ var tag = document.createElement('script');
             'autoplay': 1,
             "loop":1,
             'playlist': '0Dwocg9HnOw',
+            'vq':'hd1080'
           },
           events: {
             'onReady': onPlayerReady,
