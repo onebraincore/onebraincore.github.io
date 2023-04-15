@@ -345,3 +345,17 @@ $(document).ready(function(){
 // }
 
 /* END Anchor navigation hiding */
+
+/* Particles run */
+
+    tsParticles
+  .loadJSON("tsparticles", "particles.json")
+  .then((container) => {
+    console.log("callback - tsparticles config loaded");
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+   
+
+/* END particles run */
