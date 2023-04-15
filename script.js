@@ -213,7 +213,7 @@ var tag = document.createElement('script');
       }
 
       function onPlayerReady(event) {
-        event.target.playVideo();
+        event.target.pauseVideo();
       }
 
       var done = false;
@@ -286,13 +286,6 @@ var tag = document.createElement('script');
 
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
-  
-  player1.pauseVideo();
-  player2.pauseVideo();
-  player3.pauseVideo();
-  player4.pauseVideo();
-  player5.pauseVideo();
-  player6.pauseVideo();
 });
 
 /* END Magnetic scrolling */
