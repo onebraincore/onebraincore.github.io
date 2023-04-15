@@ -128,13 +128,13 @@ var tag = document.createElement('script');
         player2 = new YT.Player('player2', {
           height: '500',
           width: '900',
-          videoId: 'PinEsrZePvk',
+          videoId: 'UALRgeYdjXg',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': 'PinEsrZePvk',
+            'playlist': 'UALRgeYdjXg',
           },
           events: {
             'onReady': onPlayerReady,
@@ -160,13 +160,13 @@ var tag = document.createElement('script');
         player4 = new YT.Player('player4', {
           height: '500',
           width: '900',
-          videoId: '4N9A2h76YKM',
+          videoId: 'PinEsrZePvk',
           playerVars: {
             'playsinline': 1,
             "mute":1,
             'autoplay': 1,
             "loop":1,
-            'playlist': '4N9A2h76YKM',
+            'playlist': 'PinEsrZePvk',
           },
           events: {
             'onReady': onPlayerReady,
@@ -341,3 +341,19 @@ if (window.location.href.indexOf('index.html') > -1) {
 
     }
 }
+
+      /* END Anchor navigation hiding */
+
+/* Particles run */
+
+    tsParticles
+  .loadJSON("tsparticles", "particles.json")
+  .then((container) => {
+    console.log("callback - tsparticles config loaded");
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+   
+
+/* END particles run */
