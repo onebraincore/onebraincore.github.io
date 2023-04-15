@@ -225,7 +225,7 @@ var tag = document.createElement('script');
       }
 
       
-
+console.log('before scrolling');
     window.onscroll = function() {
 
       console.log('scrolling');
