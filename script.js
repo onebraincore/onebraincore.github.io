@@ -214,7 +214,6 @@ var tag = document.createElement('script');
 
       function onPlayerReady(event) {
         event.target.playVideo();
-        event.target.pauseVideo();
       }
 
       var done = false;
@@ -230,9 +229,15 @@ var tag = document.createElement('script');
     window.onscroll = function() {
       let videoElement = $(document).find('#player1');
       let boolView = videoElement.isInViewport();
+      
+      console.log('boolView');
+      console.log(boolView);
+
       if(boolView){
+        console.log('true');
         player1.playVideo();
       }else{
+        console.log('false');
         player1.pauseVideo();
       }
 
