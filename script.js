@@ -38,7 +38,7 @@ seconds = 0;
 
 window.onscroll = function() {
       let pixelsFromTop = window.scrollY;
-
+console.log('scrolling');
       if((pixelsFromTop>($('#section1').offset().top-1))&&(pixelsFromTop<($('#section6').offset().top)+$('#section6').height())){
         if($('#magnetic-navigation').hasClass("d-none")){
           $('#magnetic-navigation').removeClass("d-none");
