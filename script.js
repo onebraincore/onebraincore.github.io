@@ -1,6 +1,6 @@
 /* Timer*/
 
-if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+if (window.location.pathname== '/') {
 
 
 // Set the date we're counting down to
@@ -60,7 +60,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 /* Play videos on scrolling */
-if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+if (window.location.pathname== '/') {
 
 function inViewport(item) {
   var elementTop = item.offset().top;
