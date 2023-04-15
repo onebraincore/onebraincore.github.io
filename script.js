@@ -223,7 +223,53 @@ var tag = document.createElement('script');
 
     window.onscroll = function() {
 
-      
+      let videoElement = $(document).find('#player1');
+      let boolView = videoElement.isInViewport();
+      if(boolView){
+        player1.playVideo();
+      }else{
+        player1.pauseVideo();
+      }
+
+      let videoElement2 = $(document).find('#player2');
+      let boolView2 = videoElement2.isInViewport();
+      if(boolView2){
+        player2.playVideo();
+      }else{
+        player2.pauseVideo();
+      }
+
+      let videoElement3 = $(document).find('#player3');
+      let boolView3 = videoElement3.isInViewport();
+      if(boolView3){
+        player3.playVideo();
+      }else{
+        player3.pauseVideo();
+      }
+
+      let videoElement4 = $(document).find('#player4');
+      let boolView4 = videoElement4.isInViewport();
+      if(boolView4){
+        player4.playVideo();
+      }else{
+        player4.pauseVideo();
+      }
+
+      let videoElement5 = $(document).find('#player5');
+      let boolView5 = videoElement5.isInViewport();
+      if(boolView5){
+        player5.playVideo();
+      }else{
+        player5.pauseVideo();
+      }
+
+      let videoElement6 = $(document).find('#player6');
+      let boolView6 = videoElement6.isInViewport();
+      if(boolView6){
+        player6.playVideo();
+      }else{
+        player6.pauseVideo();
+      }
 
     }
 
@@ -243,7 +289,7 @@ $(document).ready(function(){
 
 /* Anchor navigation hiding */
 
-if (window.location.href.indexOf('https://onebrain.io/') > -1) {
+if (window.location.href.indexOf('index.html') > -1) {
 
     window.onscroll = function() {
       let pixelsFromTop = window.scrollY;
@@ -294,68 +340,6 @@ if (window.location.href.indexOf('https://onebrain.io/') > -1) {
       }
 
     }
-
-    let videoElement = $(document).find('#player1');
-      let boolView = videoElement.isInViewport();
-      if(boolView){
-        player1.playVideo();
-      }else{
-        player1.pauseVideo();
-      }
-
-      let videoElement2 = $(document).find('#player2');
-      let boolView2 = videoElement2.isInViewport();
-      if(boolView2){
-        player2.playVideo();
-      }else{
-        player2.pauseVideo();
-      }
-
-      let videoElement3 = $(document).find('#player3');
-      let boolView3 = videoElement3.isInViewport();
-      if(boolView3){
-        player3.playVideo();
-      }else{
-        player3.pauseVideo();
-      }
-
-      let videoElement4 = $(document).find('#player4');
-      let boolView4 = videoElement4.isInViewport();
-      if(boolView4){
-        player4.playVideo();
-      }else{
-        player4.pauseVideo();
-      }
-
-      let videoElement5 = $(document).find('#player5');
-      let boolView5 = videoElement5.isInViewport();
-      if(boolView5){
-        player5.playVideo();
-      }else{
-        player5.pauseVideo();
-      }
-
-      let videoElement6 = $(document).find('#player6');
-      let boolView6 = videoElement6.isInViewport();
-      if(boolView6){
-        player6.playVideo();
-      }else{
-        player6.pauseVideo();
-      }
 }
 
-      /* END Anchor navigation hiding */
-
-/* Particles run */
-
-    tsParticles
-  .loadJSON("tsparticles", "particles.json")
-  .then((container) => {
-    console.log("callback - tsparticles config loaded");
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-   
-
-/* END particles run */
+/* END Anchor navigation hiding */
