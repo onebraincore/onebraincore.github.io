@@ -289,7 +289,7 @@ $(document).ready(function(){
 
 /* Anchor navigation hiding */
 
-if (window.location.href.indexOf('index.html') > -1) {
+if (window.location.href.indexOf('https://onebrain.io/') > -1) {
 
     window.onscroll = function() {
       let pixelsFromTop = window.scrollY;
