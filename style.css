@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 html{
-    filter:invert(1);
     background-color: black;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
@@ -18,7 +17,7 @@ body{
 body p{
     font-size: 16px;
     color: #c3c3c3;
-    filter: invert(1);
+    filter:invert(0);
 }
 .faq-block .content a:hover {
     color: #2e96ef;
@@ -29,6 +28,8 @@ a:focus, a:hover{
 }
 header {
     margin-bottom: 60px;
+    position: relative;
+    z-index: 99;
 }
 main {
     margin-bottom: 100px;
@@ -39,7 +40,7 @@ footer {
     background:linear-gradient(360deg, #fd5ce5 5%, #205E89 100%);
     color: white;
     padding-bottom: 30px;
-    filter: invert(1);
+        filter: invert(0);
 }
 footer a{
     color:white;
@@ -59,7 +60,6 @@ footer hr{
   background-position: 50% 50%;
   background-repeat: no-repeat;
   z-index: 0;
-  filter: invert(1);
 }
 .social-links-group {
     text-align: right;
@@ -151,12 +151,10 @@ button.collapsible.active:after {
 }
 .brain-logo-sm img{
     height: 56px;
-    filter: invert(1);
 }
 .brain-logo-lg img{
         margin-top: 45px;
         height: 195px;
-        filter: invert(1);
 }
 .brand-name *{
     font-size: 50px;
@@ -170,7 +168,6 @@ button.collapsible.active:after {
     vertical-align: -15px;
     margin-left: 30px;
     font-size: 16px;
-    filter: invert(1);
 }
 .d-inline.wrapper.text-dark:hover {
     color: #d5d5d5;
@@ -200,7 +197,6 @@ button.collapsible.active:after {
     margin: 0 15px;
     box-shadow: 2px 2px 3px #000000;
     border-radius: 200px;
-    filter: invert(0);
 }
 
 .social-links-group img:last-child {
@@ -227,14 +223,12 @@ button.collapsible.active:after {
     background: -webkit-linear-gradient(0deg, rgba(32,94,137,1) 0%, rgba(67,247,252,1) 50%, rgba(11,165,190,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: invert(1);
 }
 .violet-gradient-brand-name{
     background: -webkit-linear-gradient(0deg,  rgba(253,92,229,1) 35%, rgba(152,93,187,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: -3px;
-    filter: invert(1);
 }
 @media only screen and (max-width: 999px){
     #player1, #player2, #player3, #player4, #player5, #player6{
@@ -243,9 +237,7 @@ button.collapsible.active:after {
     }
 }
 
-#player1 *, #player2 *, #player3 *, #player4 *, #player5 *, #player6 *{
-filter: invert(1);
-}
+
 .book-a-call, .join-the-waitlist {
     background: linear-gradient(270deg, #fd5ce5 5%, #205E89 100%);
     background-color: #44c767;
@@ -258,7 +250,8 @@ filter: invert(1);
     font-weight: 700;
     font-size: 16px;
     margin-top: 5px;
-    filter: invert(1);
+    filter:invert(0);
+    
 }
 a.join-the-waitlist {
     margin-bottom: 80px;
@@ -313,7 +306,9 @@ a.join-the-waitlist {
 }
 .features h3{
     font-size: 40px;
-
+}
+.slides-block.features {
+    filter: invert(1);
 }
 .d-flex {
     display: flex!important;
@@ -386,7 +381,7 @@ a.join-the-waitlist {
 
 
 iframe {
-    filter: invert(1);
+    
 }
 
 @media (max-width: 767px){
@@ -398,6 +393,9 @@ iframe {
 
 .gif-title-margin {
     margin-bottom: 10px;
+}
+.gif-title-margin {
+    filter: invert(1);
 }
 
 @media only screen and (max-width: 1199px){
@@ -450,7 +448,7 @@ h1, .h1{
     background: -webkit-linear-gradient(0deg, rgba(32,94,137,1) 0%, rgba(67,247,252,1) 50%, rgba(11,165,190,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: invert(1);
+    
 }
 @media only screen and (max-width: 320px) {
     h1, .h1{
@@ -461,10 +459,12 @@ h1, .h1{
     font-size: 30px;
     margin-bottom: 60px;
     color: black;
+    filter: invert(0);
 }
 .h2, h2 {
     font-size: 40px;
     color:black;
+    filter: invert(1);
 }
 
 
@@ -597,7 +597,7 @@ h1, h2, .h1, .h2{
         animation: google-disk-anim 34s linear infinite;
         left: -3px;
         top: -118px;
-        filter: invert(1);
+        
 }
 
 @keyframes google-disk-anim{
@@ -626,7 +626,7 @@ h1, h2, .h1, .h2{
     left: -3px;
     top: -155px;
     animation-delay: -3s;
-    filter: invert(1);
+    
 }
 
 
@@ -641,7 +641,7 @@ h1, h2, .h1, .h2{
     left: -3px;
     top: -175px;
     animation-delay: -6s;
-    filter: invert(1);
+    
 }
 
 
@@ -656,7 +656,7 @@ h1, h2, .h1, .h2{
     left: -3px;
     top: -200px;
     animation-delay: -9s;
-    filter: invert(1);
+    
 }
 
 .brain-circle-trello{
@@ -670,7 +670,7 @@ h1, h2, .h1, .h2{
     left: -3px;
     top: -256px;
     animation-delay: -12s;
-    filter: invert(1);
+    
 }
 
 .brain-circle-slack{
@@ -684,7 +684,7 @@ h1, h2, .h1, .h2{
     left: -3px;
     top: -308px;
     animation-delay: -15s;
-    filter: invert(1);
+    
 }
 
 
@@ -699,7 +699,7 @@ h1, h2, .h1, .h2{
     left: -3px;
     top: -359px;
     animation-delay: -19s;
-    filter: invert(1);
+    
 }
 
 .brain-circle-discord{
@@ -713,7 +713,7 @@ h1, h2, .h1, .h2{
     left: 0px;
     top: -403px;
     animation-delay: -23s;
-    filter: invert(1);
+    
 }
 
 .brain-circle-clickup{
@@ -727,7 +727,7 @@ h1, h2, .h1, .h2{
     left: 0px;
     top: -442px;
     animation-delay: -27s;
-    filter: invert(1);
+    
 }
 
 .brain-circle-hubspot{
@@ -741,7 +741,7 @@ h1, h2, .h1, .h2{
     left: 0px;
     top: -521px;
     animation-delay: -31s;
-    filter: invert(1);
+    
 }
 
 @media only screen and (max-width:425px){
@@ -821,7 +821,7 @@ h1, h2, .h1, .h2{
 .purple-tooltip + .tooltip > .tooltip-inner {background-color: #fd5ce5; color:black; filter:invert(1); border-bottom: none}
 
 body i {
-    filter: invert(1);
+    
 }
 
 @media only screen and (max-width: 432px){
