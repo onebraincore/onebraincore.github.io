@@ -213,7 +213,7 @@ var tag = document.createElement('script');
       }
       function onPlayerReady(event) {
         // event.target.playVideo();
-        event.target.style.filter = 'invert(0)';
+        // event.target.style.filter = 'invert(0)';
       }
 
       var done = false;
