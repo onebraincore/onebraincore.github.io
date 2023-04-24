@@ -55,45 +55,6 @@ for (i = 0; i < coll.length; i++) {
 }
 /* END Collapsible content */
 
-if (window.location.pathname== '/') {
-  var tag = document.createElement('script');
- tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player1;
-
-      function onYouTubeIframeAPIReady() {
-        player1 = new YT.Player('player0', {
-          height: '500',
-          width: '900',
-          videoId: 'fw1WcNJ_5Cs',
-          playerVars: {
-            'playsinline': 1,
-            "mute":0,
-            'autoplay': 0,
-            "loop":1,
-            'vq':'hd1080'
-          },
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-      function onPlayerReady(event) {
-        // event.target.playVideo();
-        // event.target.style.filter = 'invert(0)';
-      }
-
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          // setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-}
 /* Play videos on scrolling */
 if (window.location.pathname== '/usecases.html') {
 console.log('usecases');
