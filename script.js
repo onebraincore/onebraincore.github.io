@@ -64,7 +64,7 @@ if (window.location.pathname== '/') {
       var player1;
 
       function onYouTubeIframeAPIReady() {
-        player1 = new YT.Player('player1', {
+        player1 = new YT.Player('player0', {
           height: '500',
           width: '900',
           videoId: 'fw1WcNJ_5Cs',
