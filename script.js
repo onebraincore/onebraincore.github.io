@@ -302,7 +302,7 @@ var tag = document.createElement('script');
 /* Magnetic scrolling */
 
 
-if (window.location.pathname== '/') {
+if (window.location.pathname== '/usecases.html') {
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
