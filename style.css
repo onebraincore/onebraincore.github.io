@@ -13,6 +13,7 @@ section {
 }
 body{
     font-family: "Poppins";
+    background-color: black;
 }
 body p{
     font-size: 16px;
@@ -37,7 +38,7 @@ main {
 footer {
     padding-top: 40px;
     background-color: #a25dbf;
-    background:linear-gradient(360deg, #fd5ce5 5%, #205E89 100%);
+    background: #205E89;
     color: white;
     padding-bottom: 30px;
         filter: invert(0);
@@ -242,26 +243,27 @@ button.collapsible.active:after {
 
 
 .book-a-call, .join-the-waitlist {
-    background: linear-gradient(270deg, #fd5ce5 5%, #205E89 100%);
-    background-color: #44c767;
+    background: linear-gradient(270deg, rgb(32, 94, 137) 5%, rgb(11, 165, 190) 100%) rgb(68, 199, 103);
     border-radius: 28px;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     padding: 16px 55px;
-    text-shadow: 0px 1px 0px #2f6627;
+    text-shadow: rgb(47, 102, 39) 0px 1px 0px;
     font-weight: 700;
     font-size: 16px;
     margin-top: 5px;
-    filter:invert(0);
+    filter: invert(0);
     
 }
 a.join-the-waitlist {
     margin-bottom: 80px;
 }
+a.join-the-waitlist:hover {
+    background: linear-gradient(270deg, rgb(74 118 150) 5%, rgb(71 204 226) 100%) rgb(68, 199, 103);
+}
 .book-a-call:hover {
-    background: linear-gradient(270deg, #fd5ce5 5%, #205E89 100%);
-    background-color: #44c767;
+     background: linear-gradient(270deg, rgb(74 118 150) 5%, rgb(71 204 226) 100%) rgb(68, 199, 103);
     color: #000000;
 }
 .book-a-call:active {
@@ -445,7 +447,7 @@ iframe {
     }
 }
 
-h1, .h1{
+h1, .h1, h2.h1-duplicate{
     color: #205E89;
     font-size: 60px;
     background: -webkit-linear-gradient(0deg, rgba(32,94,137,1) 0%, rgba(67,247,252,1) 50%, rgba(11,165,190,1) 100%);
@@ -454,10 +456,11 @@ h1, .h1{
     
 }
 @media only screen and (max-width: 320px) {
-    h1, .h1{
+    h1, .h1, h2.h1-duplicate{
         font-size: 50px;
     }
 }
+
 .h3, h3 {
     font-size: 30px;
     margin-bottom: 60px;
@@ -469,7 +472,11 @@ h1, .h1{
     color:black;
     filter: invert(1);
 }
-
+h2.h1-duplicate{
+    filter:invert(0);
+    text-align: left;
+    margin-bottom: 100px;
+}
 
 @media only screen and (max-width: 432px){
     .gif-example img{
@@ -492,7 +499,7 @@ h1, .h1{
     }
 }
 
-h1, h2, .h1, .h2{
+h1, h2, .h1, .h2,  h2.h1-duplicate{
     font-weight: 700;
 }
 .clearfix::after {
@@ -559,7 +566,7 @@ h1, h2, .h1, .h2{
         top:50px;
     }
 }
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 729px) {
     .brain-section .book-a-call {
         display: none;        
     }
@@ -820,12 +827,46 @@ h1, h2, .h1, .h2{
     width: 300px;
     border:0;
 }
+.description-block img {
+    width: 171px;
+    margin-bottom: 20px;
+}
+.description-block.bottom img {
+    width: 100%;
+}
+.description-block {
+    text-align: left;
+    color: #A2A2A5;
+    margin-bottom: 70px;
+}
 
+.description-block .info {
+    text-align: left;
+}
+
+.description-block .title {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.step1 .info{
+    margin-bottom: 60px;
+}
+.step2 .info{
+    margin-bottom: 50px;
+}
+a.no-margin-bottom{
+    margin-bottom: 0px;
+}
+h2.margin-b-50{
+    margin-bottom: 50px;
+}
+.m-bottom-100{
+    margin-bottom: 100px;
+}
 .purple-tooltip + .tooltip > .tooltip-inner {background-color: #fd5ce5; color:black; filter:invert(1); border-bottom: none}
 
-body i {
-    
-}
 
 @media only screen and (max-width: 432px){
     .gif-example img{
@@ -835,5 +876,14 @@ body i {
         margin-bottom:0px;
     }
 }
-
-
+.step1 h2, .step2 h2{
+    text-align: left;
+}
+@media only screen and (max-width:767px){
+    .description-block, .description-block .title, .description-block .info, .step1 h2, .step2 h2{
+        text-align: center;
+    }
+    h2.h1-duplicate{
+        text-align: center;
+    }
+}
