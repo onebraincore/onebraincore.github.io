@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 312">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #4285f4;
+        stroke-linejoin: bevel;
+        stroke-width: 15px;
+      }
+
+      .cls-2 {
+        fill: #188038;
+      }
+
+      .cls-3 {
+        fill: #fbbc04;
+      }
+
+      .cls-4 {
+        fill: #4285f4;
+      }
+
+      .cls-5 {
+        fill: #34a853;
+      }
+
+      .cls-6 {
+        fill: #ea4335;
+      }
+
+      .cls-7 {
+        fill: #1967d2;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="m0,240h74V74h166V0H37C12.33,0,0,11.67,0,35"/>
+  <path class="cls-7" d="m238,0v76h74v-41c0-23.33-11.67-35-35-35"/>
+  <path class="cls-3" d="m238,74h74v164h-74"/>
+  <path class="cls-2" d="m0,238v39c0,23.33,11.67,35,35,35h41v-74"/>
+  <path class="cls-5" d="m74,238h164v74H74"/>
+  <path class="cls-6" d="m238,312v-74h74"/>
+  <path class="cls-1" d="m104,129c3.08-11.83,16.49-19.18,29.95-16.42,13.46,2.76,21.87,14.6,18.79,26.43-2.55,9.79-12.32,16.78-23.74,16.99h-9,9c13.8.39,24.68,10.55,24.31,22.69-.38,12.14-11.87,21.68-25.67,21.29-11.31-.32-21.01-7.28-23.63-16.98m66-52l27-19h4v-7,103"/>
+</svg>
